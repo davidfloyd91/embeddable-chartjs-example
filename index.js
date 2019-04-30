@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', e => {
     configObj[e.target.name] = e.target.value;
 
     data = {
-      type: "line",
+      type: 'line',
       data: {
         labels: (configObj.labels ? configObj.labels.split(',') : ['Mar', 'Jun', 'Sep', 'Dec']),
         datasets: [
