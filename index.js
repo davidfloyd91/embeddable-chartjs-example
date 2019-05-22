@@ -64,5 +64,5 @@ document.addEventListener('DOMContentLoaded', e => {
 
   chart = new Chart(ctx, data);
 
-  embedCode.value = `<iframe srcdoc="<div id='embed_container'></div><script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js' crossorigin></script><canvas id='salp-chart' width='740px' height='540px'></canvas><script>new Chart(document.getElementById('salp-chart'),${code});</script>" width="740px" height="545px"></iframe>`
+  embedCode.value = `<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js' crossorigin></script><canvas id='salp-chart'></canvas><script>new Chart(document.getElementById('salp-chart'),${code});</script>`
 });
